@@ -1,1 +1,0 @@
-Implements client side: front end using React JS
