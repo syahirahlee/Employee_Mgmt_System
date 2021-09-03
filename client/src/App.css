@@ -3,6 +3,10 @@
   flex-direction: column;
   justify-content: center;
 }
+body {
+  margin: 0;
+  padding: 0;
+}
 
 .form {
   display: flex;
@@ -10,24 +14,31 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.form input {
+input {
   width: 300px;
   height: 30px;
   font-size: 15px;
   padding-left: 10px;
   margin: 5px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 button {
   width: 200px;
-  height: 30px;
+  height: 40px;
   margin-top: 15px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: large;
+  background: #1f5156;
+  color: #fff;
 }
 
 button:hover {
   cursor: pointer;
+  color: #ffdd40;
 }
 
 .listEmployees {
@@ -48,4 +59,12 @@ button:hover {
 
 .list h3 {
   margin: 20px;
+}
+
+.Navbar {
+  background-color: #021e39;
+  width: 100%;
+  height: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
 }
