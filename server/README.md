@@ -4,6 +4,7 @@
 
 In the project directory, you can run:
 
+### `cd server`
 ### `node index.js`
 
 Runs the server in a different port than client: (http://localhost:3001) 
