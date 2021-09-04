@@ -15,7 +15,7 @@ const AddEmployee = () => {
     const [empList, setEmpList] = useState([]);
 
     //function to get employee data entered in form and send to server side
-    const addEmployee = () => {
+    const addNewEmployee = () => {
     Axios.post("http://localhost:3001/add", {
       name: name,
       phoneNo: phoneNo,
@@ -33,6 +33,7 @@ const AddEmployee = () => {
         },
       ]);
       console.log("Data successfully added");
+      alert("New Employee successfully saved!"); //inform user data has been stored in database
     });
   };
 
@@ -60,7 +61,7 @@ const AddEmployee = () => {
            setSalary(event.target.value);
          }}/>
  
-        <button onClick={addEmployee}>Submit</button>
+        <button onClick={addNewEmployee}>Submit</button>
      </div>
      </div>
     );
